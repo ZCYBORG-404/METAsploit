@@ -1,0 +1,64 @@
+#!/bin/sh
+clear
+gr="\033[32;1m"
+yel="\033[33;1m"
+indi="\033[34;1m"
+red="\033[35;1m"
+pur="\033[37;1m"
+cy="\033[36;1m"
+wh="\033[39;1m"
+b="\033[1m"
+u="\033[4m"
+bl="\033[30m"
+r="\033[31m"
+g="\033[32m"
+bu="\033[34m"
+m="\033[35m"
+c="\033[36m"
+w="\033[37m"
+endc="\033[0m"
+enda="\033[0m"
+blue="\033[1;34m"
+cyan="\033[1;36m"
+red="\033[1;31m"
+
+echo $blue"WELCOME TO METASPLOIT!"
+echo $g"INI ADALAH TOOLS PENGINSTALAN ALL PROJECT UNTUK METASPLOIT"
+echo $red"DENGAN KATA LAIN DENGAN TOOLS INI TIDAK AKAN....."
+echo $yel"TERJADI ERROR PADA SAAT MENJALANKAN TOOLS metasploit!"
+sleep 2
+
+echo "=======================" | lolcat
+echo $g"0.EXIT"
+echo "=======================" | lolcat
+echo $yel"1.INSTALL METASPLOIT"
+echo "=======================" | lolcat
+echo $blue"2.LANSUNG MENGGUNAKAN"
+echo "=======================" | lolcat
+
+echo $yel">>>>>>[SILAHKAN PILIH]<<<<<<<"
+echo ""
+read -p "[PILIH]=======>" pil
+case $pil in
+
+0) clear
+echo $red"EXIT.."
+
+;;
+
+1) clear
+echo $red"INI BAKAL LAMA WAIT..."
+pkg install unstable-repo
+pkg install metasploit
+clear
+echo $yel"SUKSES INSTALL!!!"
+
+;;
+
+2) clear
+echo $red"INI BAKAL LAMA WAIT..."
+msfconsole
+
+;;
+
+esac
